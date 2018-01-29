@@ -4,23 +4,23 @@
 <sub>**Extreme face alignment examples:** Faces rendered to a 45 degrees yaw angle (aligned to half profile) using our FacePoseNet. Images were taken from the IJB-A collection and represent extreme viewing conditions, including near profile views, occlusions, and low resolution. Such conditions are often too hard for existing face landmark detection methods to handle yet easily aligned with our FacePoseNet.</sub>
 <br/>
 <br/>
-This page contains DCNN model and python code to robustly estimate 6 degrees of freedom, 3D face pose from an unconstrained image, without the use of face landmark detectors. The method is described in the paper:
+This page contains DCNN model and python code to robustly estimate 29 degrees of freedom, 3DMM face expression parameter from an unconstrained image, without the use of face landmark detectors. The method is described in the paper:
 
-_F.-J. Chang, A. Tran, T. Hassner, I. Masi, R. Nevatia, G. Medioni, "[FacePoseNet: Making a Case for Landmark-Free Face Alignment](https://arxiv.org/abs/1708.07517)", in 7th IEEE International Workshop on Analysis and Modeling of Faces and Gestures, ICCV Workshops, 2017_ [1].
+_F.-J. Chang, A. Tran, T. Hassner, I. Masi, R. Nevatia, G. Medioni, "[ExpNet: Landmark-Free, Deep, 3D Facial Expressions](https://arxiv.org/abs/1708.07517)", in the 13th IEEE Conference on Automatic Face and Gesture Recognition, 2018_ [1].
 
-This release bundles up our **FacePoseNet** (FPN) with the **Face Renderer** from Masi _et al._ [2,5], which is available separately from [this project page](https://github.com/iacopomasi/face_specific_augm).
+This release bundles up our **ExpressionNet** (ExpNet) with **FacePoseNet** (FPN) with the **Face Renderer** from Tran _et al._ [2,5], which is available separately from [this project page](https://github.com/anhttran/3dmm_cnn).
 
-The result is an end-to-end pipeline that seamlessly estimates facial pose and produces multiple rendered views to be used for face alignment and data augmentation.
+The result is an end-to-end pipeline that seamlessly estimates facial expression, pose and shape for holistic 3D face modeling.
 
 ![Teaser](http://www-bcf.usc.edu/~iacopoma/img/FPN3.png)
 
 ## Features
-* **6DoF 3D Head Pose estimation** + **3D rendered facial views**.
+* **29DoF 3DMM face expression estimation** + **6DoF 3D head pose estimation**.
 * Does not use **fragile** landmark detectors
 * Robustness on images landmark detectors struggle with (low rez., occluded, etc.)
-* Extremely fast pose estimation
+* Extremely fast expression and pose estimation
 * Both CPU and GPU supported
-* Provides better face recognition through better face alignment than alignment using state of the art landmark detectors [1]
+* Provides better expression estmation than the ones using state of the art landmark detectors [1]
 
 ## Dependencies
 
@@ -31,7 +31,7 @@ The result is an end-to-end pipeline that seamlessly estimates facial pose and p
 
 The code has been tested on Linux only. On Linux you can rely on the default version of python, installing all the packages needed from the package manager or on Anaconda Python and install required packages through `conda`. 
 
-**Note:** no landmarks are used in our method, although you can still project the landmarks on the input image using the estimated pose. See the paper for further details. 
+**Note:** no landmarks are used in our method, although you can still project the landmarks on the input image using the estimated expression and pose. See the paper for further details. 
 
 ## Usage
 
@@ -91,7 +91,7 @@ Please cite our paper with the following bibtex if you use our face renderer:
 ```
 
 ## References
-[1] F.-J. Chang, A. Tran, T. Hassner, I. Masi, R. Nevatia, G. Medioni, "[FacePoseNet: Making a Case for Landmark-Free Face Alignment](https://arxiv.org/abs/1708.07517)", in 7th IEEE International Workshop on Analysis and Modeling of Faces and Gestures, ICCV Workshops, 2017
+[1] F.-J. Chang, A. Tran, T. Hassner, I. Masi, R. Nevatia, G. Medioni, "[ExpNet: Landmark-Free, Deep, 3D Facial Expressions](https://arxiv.org/abs/1708.07517)", in 7th IEEE International Workshop on Analysis and Modeling of Faces and Gestures, ICCV Workshops, 2017
 
 [2] I. Masi\*, A. Tran\*, T. Hassner\*, J. Leksut, G. Medioni, "Do We Really Need to Collect Million of Faces for Effective Face Recognition? ", ECCV 2016, 
     \* denotes equal authorship

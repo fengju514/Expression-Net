@@ -1,10 +1,10 @@
 ID,FILE,FACE_X,FACE_Y,FACE_WIDTH,FACE_HEIGHT
-subject1_a,Images/Angry_9_1.jpg,407.0318,140.5329,130.2308,208.3272
+subject1_a,images/Angry_9_1.jpg,407.0318,140.5329,130.2308,208.3272
 subject2_a,images/Angry_15_1.jpg,337.5702,74.0697,111.4269,253.1137
 subject3_a,images/Angry_24_1.jpg,485.3235,99.033,108.0698,257.9427
 subject4_a,images/Angry_30_1.jpg,121.5895,128.4542,130.2136,244.3279
 subject5_a,images/Disgust_71_1.jpg,346.0486,81.3072,157.3632,363.9896
-subject6_a,Images/Disgust_84_1.jpg,241.7535,87.7517,203.488,388.0612
+subject6_a,images/Disgust_84_1.jpg,241.7535,87.7517,203.488,388.0612
 subject7_a,images/Fear_120_1.jpg,123.5395,90.5825,20.4364,387.41
 subject8_a,images/Fear_145_1.jpg,270.6531,109.271,116.8196,248.5495
 subject9_a,images/Happy_169_1.jpg,354.2701,161.8998,123.6473,234.4232

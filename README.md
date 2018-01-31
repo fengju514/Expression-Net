@@ -30,7 +30,7 @@ The code has been tested on Linux with Python 2.7.12. On Linux you can rely on t
 
 ## Usage
 
-* **Important:** Please download the learned ExpressionNet and identity shape model from,  and FacePoseNet from https://www.dropbox.com/s/r38psbq55y2yj4f/fpn_new_model.tar.gz?dl=0. Make sure that the ExpNet and shape models are stored in `3DMM_model` and FPN models are stored in the folder `fpn_new_model`.
+* **Important:** Please download the learned ExpressionNet and identity shape model from https://www.dropbox.com/s/ejrnujis19vxpmi/3DMM_model.tar.gz?dl=0, and FacePoseNet from https://www.dropbox.com/s/r38psbq55y2yj4f/fpn_new_model.tar.gz?dl=0. Make sure that the ExpNet and shape models are stored in `3DMM_model` and FPN models are stored in the folder `fpn_new_model`.
 
 ### Run it
 

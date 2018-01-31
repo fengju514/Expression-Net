@@ -1,4 +1,4 @@
-# Expression-Net
+# EXPression-Net
 
 This page contains DCNN model and python code to robustly estimate 29 degrees of freedom, 3DMM face expression parameter from an unconstrained image, without the use of face landmark detectors. The method is described in the paper:
 

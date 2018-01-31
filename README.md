@@ -1,12 +1,12 @@
 # Expression-Net
 
-This page contains DCNN model and python code to robustly estimate 29 degrees of freedom, 3DMM face expression parameter from an unconstrained image, without the use of face landmark detectors. The method is described in the paper:
+This page contains a deep convolutional neural network (DCNN) model and python code to robustly estimate 29 degrees of freedom, 3DMM face expression coefficients directly from an unconstrained face image, without the use of face landmark detectors. The method is described in the paper:
 
 _F.-J. Chang, A. Tran, T. Hassner, I. Masi, R. Nevatia, G. Medioni, "[ExpNet: Landmark-Free, Deep, 3D Facial Expressions](https://arxiv.org/abs/1708.07517)", in the 13th IEEE Conference on Automatic Face and Gesture Recognition, 2018_ [1].
 
-This release bundles up our **ExpressionNet** (ExpNet) with **FacePoseNet** (FPN) from Chang_et al._ [2], and **3DMM face identity shape network** from Tran _et al._ [3], which are available in [this project page](https://github.com/fengju514/Face-Pose-Net) and [this project page](https://github.com/anhttran/3dmm_cnn) respectively.
+This release bundles up our **ExpressionNet** (ExpNet) with **FacePoseNet** (FPN) from Chang_et al._ [2], and **3DMM face identity shape network** from Tran _et al._ [3], which are available separately from the [FacePoseNet project page](https://github.com/fengju514/Face-Pose-Net) and the [Face Identity Shape Net project page](https://github.com/anhttran/3dmm_cnn), respectively.
 
-The result (.ply mesh file) is based on an end-to-end pipeline that estimates facial expression, shape (identity), and pose for holistic 3D face modeling.
+The code provided here bundels all three components for holistic 3D face modeling and produces a 3D model (.ply mesh file).
 
 ![Teaser](https://github.com/fengju514/Expression-Net/blob/master/ExpNet_teaser_v2.jpg)
 

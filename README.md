@@ -6,17 +6,17 @@ _F.-J. Chang, A. Tran, T. Hassner, I. Masi, R. Nevatia, G. Medioni, "[ExpNet: La
 
 This release bundles up our **ExpressionNet** (ExpNet) with **FacePoseNet** (FPN) from Chang_et al._ [2], and **3DMM face identity shape network** from Tran _et al._ [3], which are available in [this project page](https://github.com/fengju514/Face-Pose-Net) and [this project page](https://github.com/anhttran/3dmm_cnn) respectively.
 
-The result (.ply mesh file) is an end-to-end pipeline that estimates facial expression, shape (identity), and pose for holistic 3D face modeling.
+The result (.ply mesh file) is based on an end-to-end pipeline that estimates facial expression, shape (identity), and pose for holistic 3D face modeling.
 
 ![Teaser](https://github.com/fengju514/Expression-Net/blob/master/ExpNet_teaser_v2.jpg)
 
 ## Features
-* **29DoF 3DMM face expression estimation** + **6DoF 3D head pose estimation**.
+* **29DoF 3DMM face expression estimation**
+* **3DMM face identity shape**[3] + **6DoF 3D head pose**[2] are also included
 * Does not use **fragile** landmark detectors
 * Robustness on images landmark detectors struggle with (low rez., occluded, etc.)
-* Extremely fast expression and pose estimation
-* Both CPU and GPU supported
-* Provides better expression estmation than the ones using state of the art landmark detectors [1]
+* Extremely fast expression estimation
+* Provides better expression estmation than the ones using state-of-the-art landmark detectors [1]
 
 ## Dependencies
 
@@ -25,9 +25,8 @@ The result (.ply mesh file) is an end-to-end pipeline that estimates facial expr
 * [Numpy](http://www.numpy.org/)
 * [Python2.7](https://www.python.org/download/releases/2.7/)
 
-The code has been tested on Linux only. On Linux you can rely on the default version of python, installing all the packages needed from the package manager or on Anaconda Python and install required packages through `conda`. 
+The code has been tested on Linux with Python 2.7.12. On Linux you can rely on the default version of python, installing all the packages needed from the package manager or on Anaconda Python and install required packages through `conda`. 
 
-**Note:** no landmarks are used in our method, although you can still project the landmarks on the input image using the estimated expression and pose. See the paper for further details. 
 
 ## Usage
 

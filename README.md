@@ -58,7 +58,7 @@ Please see the input images [here](images) and 3D shapes [here](output_ply).
 Please cite our paper with the following bibtex if you use our code:
 
 ``` latex
-@inproceedings{chang17fpn,
+@inproceedings{chang17expnet,
       title={ExpNet: Landmark-Free, Deep, 3D Facial Expressions},
       booktitle = {13th IEEE Conference on Automatic Face and Gesture Recognition},
       author={

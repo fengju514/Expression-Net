@@ -32,7 +32,11 @@ The code has been tested on Linux with Python 2.7.12. On Linux you can rely on t
 
 ## Usage
 
-* **Important:** Please download the learned ExpressionNet model from https://www.dropbox.com/s/frq7u7z5kgxnz9e/Expression_Model.tar.gz?dl=0, identity shape model from https://www.dropbox.com/s/ej80o9lnj0k49qu/Shape_Model.tar.gz?dl=0, and FacePoseNet from https://www.dropbox.com/s/r38psbq55y2yj4f/fpn_new_model.tar.gz?dl=0. Make sure that the ExpNet, shape, and FacePoseNet models are stored in the folder `Expression_Model`, `Shape_Model`, and `fpn_new_model` respectively.
+**Important:** Please download the following learned deep models:
+* ExpressionNet from https://www.dropbox.com/s/frq7u7z5kgxnz9e/Expression_Model.tar.gz?dl=0
+* Identity shape model from https://www.dropbox.com/s/ej80o9lnj0k49qu/Shape_Model.tar.gz?dl=0, and
+* FacePoseNet from https://www.dropbox.com/s/r38psbq55y2yj4f/fpn_new_model.tar.gz?dl=0. 
+Make sure that the ExpNet, shape, and FacePoseNet models are stored in the folder `Expression_Model`, `Shape_Model`, and `fpn_new_model` respectively.
 
 ### Run it
 

@@ -8,7 +8,7 @@ This release bundles up our **ExpressionNet** (ExpNet) with **FacePoseNet** (FPN
 
 The result (.ply mesh file) is an end-to-end pipeline that estimates facial expression, shape (identity), and pose for holistic 3D face modeling.
 
-![Teaser](https://www.dropbox.com/s/idysemx3kids6fe/ExpNet_teaser_v2.jpg?dl=0)
+![Teaser](https://www.dropbox.com/s/idysemx3kids6fe/ExpNet_teaser_v2.jpg)
 
 ## Features
 * **29DoF 3DMM face expression estimation** + **6DoF 3D head pose estimation**.

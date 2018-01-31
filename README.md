@@ -53,7 +53,7 @@ We provide a sample input list available [here](input.csv).
 where `<FACE_X, FACE_y, FACE_WIDTH, FACE_HEIGHT>` is the face bounding box information, either obtained manually or by the face detector. 
 
 ## Sample Results
-Please see the input images [images](images), cropped images [tmp](tmp) and 3D shapes [output_ply](output_ply).
+Please see the input images ([images]), cropped images [tmp](tmp) and 3D shapes [output_ply](output_ply).
 
 ![sample_res](https://github.com/fengju514/Expression-Net/blob/master/ExpNet_sample_results.jpg)
 

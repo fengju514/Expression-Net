@@ -14,7 +14,7 @@ The code provided here bundles all three components for holistic 3D face modelin
 
 ## Features
 * Estimating **29D 3DMM face expression coefficients**
-* **3DMM face identity shape**[3] + **6DoF 3D head pose**[2] are also included ([facial details](https://github.com/anhttran/extreme_3d_faces) are a planned extension)
+* **3DMM face identity shape** [3] + **6DoF 3D head pose** [2] are also included ([facial details](https://github.com/anhttran/extreme_3d_faces) are a planned extension)
 * Does not depend on fragile landmark detectors, therefore...
 * ...robust under image conditions where landmark detectors struggle (low rez., occluded, etc.)
 * Extremely fast expression estimation
@@ -32,7 +32,7 @@ The code has been tested on Linux with Python 2.7.12. On Linux you can rely on t
 
 ## Usage
 
-* **Important:** Please download the learned ExpressionNet and identity shape model from https://www.dropbox.com/s/ejrnujis19vxpmi/3DMM_model.tar.gz?dl=0, and FacePoseNet from https://www.dropbox.com/s/r38psbq55y2yj4f/fpn_new_model.tar.gz?dl=0. Make sure that the ExpNet and shape models are stored in `3DMM_model` and FPN models are stored in the folder `fpn_new_model`.
+* **Important:** Please download the learned ExpressionNet model from https://www.dropbox.com/s/frq7u7z5kgxnz9e/Expression_Model.tar.gz?dl=0, identity shape model from , and FacePoseNet from https://www.dropbox.com/s/r38psbq55y2yj4f/fpn_new_model.tar.gz?dl=0. Make sure that the ExpNet and shape models are stored in the folder `Expression_Model` and `Shape_Model` respectively, and FacePoseNet model in the folder `fpn_new_model`.
 
 ### Run it
 
@@ -49,9 +49,9 @@ We provide a sample input list available [here](input.csv).
 where `<FACE_X, FACE_y, FACE_WIDTH, FACE_HEIGHT>` is the face bounding box information, either obtained manually or by the face detector. 
 
 ## Sample Results
-Please see the input images [here](images) and 3D shapes [here](output_ply).
+Please see the input images [here](images), cropped images [here](tmp) and 3D shapes [here](output_ply).
 
-![sbj10](https://github.com/fengju514/Expression-Net/blob/master/ExpNet_sample_results.jpg)
+![sample_res](https://github.com/fengju514/Expression-Net/blob/master/ExpNet_sample_results.jpg)
 
 
 

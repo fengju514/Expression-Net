@@ -1,20 +1,22 @@
 # Expression-Net
 
-This page contains a deep convolutional neural network (DCNN) model and python code to robustly estimate 29 degrees of freedom, 3DMM face expression coefficients directly from an unconstrained face image, without the use of face landmark detectors. The method is described in the paper:
+This page contains a deep convolutional neural network (DCNN) model and python code for robust estimation of the 29 degrees-of-freedom, 3DMM face expression coefficients, directly from an unconstrained face image and without the use of face landmark detectors. The method is described in the paper: 
 
 _F.-J. Chang, A. Tran, T. Hassner, I. Masi, R. Nevatia, G. Medioni, "[ExpNet: Landmark-Free, Deep, 3D Facial Expressions](https://arxiv.org/abs/1708.07517)", in the 13th IEEE Conference on Automatic Face and Gesture Recognition, 2018_ [1].
 
-This release bundles up our **ExpressionNet** (ExpNet) with **FacePoseNet** (FPN) from Chang _et al._ [2], and **3DMM face identity shape network** from Tran _et al._ [3], which are available separately from the [FacePoseNet project page](https://github.com/fengju514/Face-Pose-Net) and the [Face Identity Shape Net project page](https://github.com/anhttran/3dmm_cnn), respectively.
+This release bundles up our **ExpressionNet** (ExpNet) with **FacePoseNet** (FPN) from Chang _et al._ [2], and **3DMM face identity shape network** from Tran _et al._ [3], which are available separately from the [FacePoseNet project page](https://github.com/fengju514/Face-Pose-Net) and the [Face Identity Shape Net project page](https://github.com/anhttran/3dmm_cnn), respectively. 
 
 The code provided here bundels all three components for holistic 3D face modeling and produces a 3D model (.ply mesh file).
+
+Mid level facial details can be added to this shape using our [extreme 3D reconstruction project](https://github.com/anhttran/extreme_3d_faces), but at the moment this is not supported by the code offered here. 
 
 ![Teaser](https://github.com/fengju514/Expression-Net/blob/master/ExpNet_teaser_v2.jpg)
 
 ## Features
-* **29DoF 3DMM face expression estimation**
-* **3DMM face identity shape**[3] + **6DoF 3D head pose**[2] are also included
-* Does not use **fragile** landmark detectors
-* Robustness on images landmark detectors struggle with (low rez., occluded, etc.)
+* Estimating **29D 3DMM face expression coefficients**
+* **3DMM face identity shape**[3] + **6DoF 3D head pose**[2] are also included ([facial details](https://github.com/anhttran/extreme_3d_faces) are a planned extenssion)
+* Does not depend on fragile landmark detectors, therefore...
+* ...robust under image conditions where landmark detectors struggle (low rez., occluded, etc.)
 * Extremely fast expression estimation
 * Provides better expression estmation than the ones using state-of-the-art landmark detectors [1]
 
@@ -55,7 +57,7 @@ Please see the input images [here](images) and 3D shapes [here](output_ply).
 
 ## Citation
 
-Please cite our paper with the following bibtex if you use our code:
+This project is described in our paper [1]. If you use our expression models, please cite this paper using the bibtex below. If you also use the 3DMM face identity shape network [3] and FacePoseNet [2], pelase add references to those papers as well.
 
 ``` latex
 @inproceedings{chang17expnet,

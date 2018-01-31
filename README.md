@@ -6,7 +6,7 @@ _F.-J. Chang, A. Tran, T. Hassner, I. Masi, R. Nevatia, G. Medioni, "[ExpNet: La
 
 This release bundles up our **ExpressionNet** (ExpNet) with **FacePoseNet** (FPN) from Chang _et al._ [2], and **3DMM face identity shape network** from Tran _et al._ [3], which are available separately from the [FacePoseNet project page](https://github.com/fengju514/Face-Pose-Net) and the [Face Identity Shape Net project page](https://github.com/anhttran/3dmm_cnn), respectively. 
 
-The code provided here bundels all three components for holistic 3D face modeling and produces a 3D model (.ply mesh file).
+The code provided here bundles all three components for holistic 3D face modeling and produces a 3D model (.ply mesh file).
 
 Mid level facial details can be added to this shape using our [extreme 3D reconstruction project](https://github.com/anhttran/extreme_3d_faces), but at the moment this is not supported by the code offered here. 
 

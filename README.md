@@ -1,14 +1,10 @@
 # Expression-Net
 
-![Teaser](http://www-bcf.usc.edu/~iacopoma/img/FPN4.jpg)
-<sub>**Extreme face alignment examples:** Faces rendered to a 45 degrees yaw angle (aligned to half profile) using our FacePoseNet. Images were taken from the IJB-A collection and represent extreme viewing conditions, including near profile views, occlusions, and low resolution. Such conditions are often too hard for existing face landmark detection methods to handle yet easily aligned with our FacePoseNet.</sub>
-<br/>
-<br/>
 This page contains DCNN model and python code to robustly estimate 29 degrees of freedom, 3DMM face expression parameter from an unconstrained image, without the use of face landmark detectors. The method is described in the paper:
 
 _F.-J. Chang, A. Tran, T. Hassner, I. Masi, R. Nevatia, G. Medioni, "[ExpNet: Landmark-Free, Deep, 3D Facial Expressions](https://arxiv.org/abs/1708.07517)", in the 13th IEEE Conference on Automatic Face and Gesture Recognition, 2018_ [1].
 
-This release bundles up our **ExpressionNet** (ExpNet) with **FacePoseNet** (FPN) with the **Face Renderer** from Tran _et al._ [2,5], which is available separately from [this project page](https://github.com/anhttran/3dmm_cnn).
+This release bundles up our **ExpressionNet** (ExpNet) with **FacePoseNet** (FPN) from Chang_et al._ [2], and the state-of-the-art **3DMM face identity (shape) parameter model** from Tran _et al._ [3], which are available in [this project page](https://github.com/fengju514/Face-Pose-Net) and [this project page](https://github.com/anhttran/3dmm_cnn) respectively.
 
 The result is an end-to-end pipeline that seamlessly estimates facial expression, pose and shape for holistic 3D face modeling.
 
@@ -69,41 +65,36 @@ Please see the input images [here](images) and rendered outputs [here](output_re
 
 
 ## Current Limitations
-FPN is currently trained with a single 3D generic shape, without accounting for facial expressions. Addressing these is planned as future work.
 
 ## Citation
 
-Please cite our paper with the following bibtex if you use our face renderer:
+Please cite our paper with the following bibtex if you use our code:
 
 ``` latex
 @inproceedings{chang17fpn,
-      title={{F}ace{P}ose{N}et: Making a Case for Landmark-Free Face Alignment},
-      booktitle = {7th IEEE International Workshop on Analysis and Modeling of Faces and Gestures, ICCV Workshops},
+      title={ExpNet: Landmark-Free, Deep, 3D Facial Expressions},
+      booktitle = {13th IEEE Conference on Automatic Face and Gesture Recognition},
       author={
-      Feng-ju Chang
+      Feng-Ju Chang
       and Anh Tran 
       and Tal Hassner 
       and Iacopo Masi 
       and Ram Nevatia
       and G\'{e}rard Medioni},
-      year={2017},
+      year={2018},
     }
 ```
 
 ## References
-[1] F.-J. Chang, A. Tran, T. Hassner, I. Masi, R. Nevatia, G. Medioni, "[ExpNet: Landmark-Free, Deep, 3D Facial Expressions](https://arxiv.org/abs/1708.07517)", in 7th IEEE International Workshop on Analysis and Modeling of Faces and Gestures, ICCV Workshops, 2017
+[1] F.-J. Chang, A. Tran, T. Hassner, I. Masi, R. Nevatia, G. Medioni, "[ExpNet: Landmark-Free, Deep, 3D Facial Expressions](https://arxiv.org/abs/1708.07517)", in the 13th IEEE Conference on Automatic Face and Gesture Recognition, 2018
 
-[2] I. Masi\*, A. Tran\*, T. Hassner\*, J. Leksut, G. Medioni, "Do We Really Need to Collect Million of Faces for Effective Face Recognition? ", ECCV 2016, 
-    \* denotes equal authorship
+[2] F.-J. Chang, A. Tran, T. Hassner, I. Masi, R. Nevatia, G. Medioni, "[FacePoseNet: Making a Case for Landmark-Free Face Alignment](https://arxiv.org/abs/1708.07517)", in the 7th IEEE International Workshop on Analysis and Modeling of Faces and Gestures, ICCV Workshops, 2017
 
-[3] I. Masi, S. Rawls, G. Medioni, P. Natarajan "Pose-Aware Face Recognition in the Wild", CVPR 2016
+[3] A. Tran, T. Hassner, I. Masi, G. Medioni, "[Regressing Robust and Discriminative 3D Morphable Models with a very Deep Neural Network](https://arxiv.org/abs/1612.04904)", in CVPR, 2017
 
-[4] T. Hassner, S. Harel, E. Paz and R. Enbar "Effective Face Frontalization in Unconstrained Images", CVPR 2015
-
-[5] I. Masi, T. Hassner, A. Tran, and G. Medioni, "Rapid Synthesis of Massive Face Sets for Improved Face Recognition", FG 2017
 
 ## Changelog
-- August 2017, First Release 
+- February 2018, First Release 
 
 ## Disclaimer
 

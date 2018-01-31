@@ -30,17 +30,14 @@ The code has been tested on Linux with Python 2.7.12. On Linux you can rely on t
 
 ## Usage
 
-* **Important:** In order to download **both** FPN code and the renderer use `git clone --recursive`
-* **Important:** Please download the learned models from https://www.dropbox.com/s/r38psbq55y2yj4f/fpn_new_model.tar.gz?dl=0   and make sure that the FPN models are stored in the folder `fpn_new_model`.
+* **Important:** Please download the learned ExpressionNet and identity shape model from,  and FacePoseNet from https://www.dropbox.com/s/r38psbq55y2yj4f/fpn_new_model.tar.gz?dl=0. Make sure that the ExpNet and shape models are stored in `3DMM_model` and FPN models are stored in the folder `fpn_new_model`.
 
 ### Run it
 
-The alignment and rendering can be used from the command line in the following, different ways.
-
-To run it directly on a list of images (software will run FPN to estimate the pose and then render novel views based on the estimated pose):
+To run it directly on a list of images (software will run ExpNet, SapeNet, and PoseNet to estimate the expression, shape, and pose to get the .ply 3D mesh files). The final 3D shape can be displayed using standard off-the-shelf 3D (ply file) visualization software such as [MeshLab](http://meshlab.sourceforge.net)
 
 ```bash
-$ python main_fpn.py <input-list-path>
+$ python main_ExpNet.py <input-list-path>
 ```
 
 We provide a sample input list available [here](input.csv).
@@ -50,7 +47,7 @@ We provide a sample input list available [here](input.csv).
 where `<FACE_X, FACE_y, FACE_WIDTH, FACE_HEIGHT>` is the face bounding box information, either obtained manually or by the face detector. 
 
 ## Sample Results
-Please see the input images [here](images) and rendered outputs [here](output_render).
+Please see the input images [here](images) and 3D shapes [here](output_ply).
 
 ### input: ### 
 ![sbj10](./images/input10.jpg)
@@ -62,8 +59,6 @@ Please see the input images [here](images) and rendered outputs [here](output_re
 ![sbj10](./output_render/subject10/subject10_a_rendered_aug_-75_00_10.jpg)
 
 
-
-## Current Limitations
 
 ## Citation
 

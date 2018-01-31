@@ -50,13 +50,7 @@ where `<FACE_X, FACE_y, FACE_WIDTH, FACE_HEIGHT>` is the face bounding box infor
 Please see the input images [here](images) and 3D shapes [here](output_ply).
 
 ### input: ### 
-![sbj10](./images/input10.jpg)
-### rendering: ### 
-![sbj10](./output_render/subject10/subject10_a_rendered_aug_-00_00_10.jpg)
-![sbj10](./output_render/subject10/subject10_a_rendered_aug_-22_00_10.jpg)
-![sbj10](./output_render/subject10/subject10_a_rendered_aug_-40_00_10.jpg)
-![sbj10](./output_render/subject10/subject10_a_rendered_aug_-55_00_10.jpg)
-![sbj10](./output_render/subject10/subject10_a_rendered_aug_-75_00_10.jpg)
+![sbj10](https://github.com/fengju514/Expression-Net/blob/master/ExpNet_sample_results.jpg)
 
 
 

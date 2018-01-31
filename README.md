@@ -37,7 +37,7 @@ The code has been tested on Linux with Python 2.7.12. On Linux you can rely on t
 To run it directly on a list of images (software will run ExpNet, SapeNet, and PoseNet to estimate the expression, shape, and pose to get the .ply 3D mesh files). The final 3D shape can be displayed using standard off-the-shelf 3D (ply file) visualization software such as [MeshLab](http://meshlab.sourceforge.net)
 
 ```bash
-$ python main_ExpNet.py <input-list-path>
+$ python main_ExpShapePoseNet.py <input-list-path>
 ```
 
 We provide a sample input list available [here](input.csv).

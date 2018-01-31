@@ -49,7 +49,6 @@ where `<FACE_X, FACE_y, FACE_WIDTH, FACE_HEIGHT>` is the face bounding box infor
 ## Sample Results
 Please see the input images [here](images) and 3D shapes [here](output_ply).
 
-### input: ### 
 ![sbj10](https://github.com/fengju514/Expression-Net/blob/master/ExpNet_sample_results.jpg)
 
 

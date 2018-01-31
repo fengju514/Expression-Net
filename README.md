@@ -8,17 +8,17 @@ This release bundles up our **ExpressionNet** (ExpNet) with **FacePoseNet** (FPN
 
 The code provided here bundles all three components for holistic 3D face modeling and produces a 3D model (.ply mesh file).
 
-Mid level facial details can be added to this shape using our [extreme 3D reconstruction project](https://github.com/anhttran/extreme_3d_faces), but at the moment this is not supported by the code offered here. 
+**Important** This is an ongoing project. Please check here for updates, corrections and extensions. In particular, mid level facial details can be added to this shape using our [extreme 3D reconstruction project](https://github.com/anhttran/extreme_3d_faces). At the moment facial details estimation is not supported by the code offered here, but we plan to add this in the future. 
 
 ![Teaser](https://github.com/fengju514/Expression-Net/blob/master/ExpNet_teaser_v2.jpg)
 
 ## Features
 * Estimating **29D 3DMM face expression coefficients**
-* **3DMM face identity shape**[3] + **6DoF 3D head pose**[2] are also included ([facial details](https://github.com/anhttran/extreme_3d_faces) are a planned extenssion)
+* **3DMM face identity shape**[3] + **6DoF 3D head pose**[2] are also included ([facial details](https://github.com/anhttran/extreme_3d_faces) are a planned extension)
 * Does not depend on fragile landmark detectors, therefore...
 * ...robust under image conditions where landmark detectors struggle (low rez., occluded, etc.)
 * Extremely fast expression estimation
-* Provides better expression estmation than the ones using state-of-the-art landmark detectors [1]
+* Provides better expression estimation than the ones using state-of-the-art landmark detectors [1]
 
 ## Dependencies
 
@@ -57,7 +57,7 @@ Please see the input images [here](images) and 3D shapes [here](output_ply).
 
 ## Citation
 
-This project is described in our paper [1]. If you use our expression models, please cite this paper using the bibtex below. If you also use the 3DMM face identity shape network [3] and FacePoseNet [2], pelase add references to those papers as well.
+This project is described in our paper [1]. If you use our expression models, please cite this paper using the bibtex below. If you also use the 3DMM face identity shape network [3] and FacePoseNet [2], please add references to those papers as well.
 
 ``` latex
 @inproceedings{chang17expnet,

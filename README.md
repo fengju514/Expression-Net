@@ -14,7 +14,7 @@ The code provided here bundles all three components for holistic 3D face modelin
 
 ## Features
 * Estimating **29D 3DMM face expression coefficients**
-* **3DMM face identity shape** [3] + **6DoF 3D head pose** [2] are also included ([facial details](https://github.com/anhttran/extreme_3d_faces) are a planned extension)
+* **3DMM face identity shape** [3] + **6DoF 3D head pose** [2] are also included ([facial details estimation](https://github.com/anhttran/extreme_3d_faces) is a planned extension)
 * Does not depend on fragile landmark detectors, therefore...
 * ...robust under image conditions where landmark detectors struggle such as low resolutions and occlusions
 * Extremely fast expression estimation
@@ -40,27 +40,28 @@ Make sure that the ExpNet, shape, and FacePoseNet models are stored in the folde
 
 ### Run it
 
-To run it directly on a list of images (software will run ExpNet, ShapeNet, and PoseNet to estimate the expression, shape, and pose to get the .ply 3D mesh files). The final 3D shape can be displayed using standard off-the-shelf 3D (ply file) visualization software such as [MeshLab](http://meshlab.sourceforge.net)
+Our code use a list of images as an input. The software will run ExpNet, ShapeNet, and PoseNet to estimate the expression, shape, and pose to get the .ply 3D mesh files for the images in this list. The final 3D shape can be displayed using standard off-the-shelf 3D (ply file) visualization software such as [MeshLab](http://meshlab.sourceforge.net)
 
 ```bash
 $ python main_ExpShapePoseNet.py <input-list-path>
 ```
 
-We provide a sample input list available [here](input.csv).
+We provide a sample input list available [here](input.csv). More specifically, it is a text file with multiple lines. Each line provides information of an input image with this format:
+
 ```bash
 <ID, FILE, FACE_X, FACE_y, FACE_WIDTH, FACE_HEIGHT>
 ```
 where `<FACE_X, FACE_y, FACE_WIDTH, FACE_HEIGHT>` is the face bounding box information, either obtained manually or by the face detector. 
 
 ## Sample Results
-Please see the input images, [images](images), cropped images, [tmp](tmp), and the output 3D shapes, [output_ply](output_ply).
+Please see the input images ([images](images)), cropped images ([tmp](tmp)), and the output 3D shapes ([output_ply](output_ply)).
 
 ![sample_res](https://github.com/fengju514/Expression-Net/blob/master/ExpNet_sample_results.jpg)
 
 
 ## Citation
 
-This project is described in our paper [1]. If you use our expression models, please cite this paper using the bibtex below. If you also use the 3DMM face identity shape network [3] and FacePoseNet [2], please add references to those papers as well.
+This project is described in our paper [1]. If you use our expression model, please cite this paper using the bibtex below. If you also use the 3DMM face identity shape network [3] and FacePoseNet [2], please add references to those papers as well.
 
 ``` latex
 @inproceedings{chang17expnet,

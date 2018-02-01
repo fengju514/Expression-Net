@@ -16,7 +16,7 @@ The code provided here bundles all three components for holistic 3D face modelin
 * Estimating **29D 3DMM face expression coefficients**
 * **3DMM face identity shape** [3] + **6DoF 3D head pose** [2] are also included ([facial details](https://github.com/anhttran/extreme_3d_faces) are a planned extension)
 * Does not depend on fragile landmark detectors, therefore...
-* ...robust under image conditions where landmark detectors struggle such as low resolutions
+* ...robust under image conditions where landmark detectors struggle such as low resolutions and occlusions
 * Extremely fast expression estimation
 * Provides better expression estimation than the ones using state-of-the-art landmark detectors [1]
 

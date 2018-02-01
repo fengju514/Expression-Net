@@ -58,7 +58,7 @@ Please see the input images, [images](images), cropped images, [tmp](tmp), and t
 ![sample_res](https://github.com/fengju514/Expression-Net/blob/master/ExpNet_sample_results.jpg)
 
 ## Robustness to Image Scale Changes
-Here we show the 3D expression+shape results for several example images of original scale and downscale by 0.2. Note that the pose information is ignored here to amphasize the expression changes across the image scales. Comparing to the landmark-based expression estimation method, CLNF, and a DCNN method, 3DDFA, our method can well capture the expression in the images and more robust to the low image scales (resolutions). Please refer to the paper [1] for more details.
+Here we show the 3D expression+shape results for several example images of original scale and downscale by 0.2. Note that the pose information is ignored here to emphasize the expression changes across the image scales. Comparing to the landmark-based expression estimation method, CLNF, and a DCNN method, 3DDFA, our method can well capture the expression in the images and more robust to the low image scales (resolutions). Please refer to the paper [1] for more details.
 
 ## Example 1
 ![sample_res2](https://github.com/fengju514/Expression-Net/blob/master/ExpNet_sample_results_2.jpg)

@@ -2,7 +2,7 @@
 
 This page contains a deep convolutional neural network (DCNN) model and python code for robust estimation of the 29 degrees-of-freedom, 3DMM face expression coefficients, directly from an unconstrained face image and without the use of face landmark detectors. The method is described in the paper: 
 
-_F.-J. Chang, A. Tran, T. Hassner, I. Masi, R. Nevatia, G. Medioni, "[ExpNet: Landmark-Free, Deep, 3D Facial Expressions](https://arxiv.org/abs/1708.07517)", in the 13th IEEE Conference on Automatic Face and Gesture Recognition, 2018_ [1].
+_F.-J. Chang, A. Tran, T. Hassner, I. Masi, R. Nevatia, G. Medioni, "[ExpNet: Landmark-Free, Deep, 3D Facial Expressions](https://arxiv.org/abs/1802.00542)", in the 13th IEEE Conference on Automatic Face and Gesture Recognition, 2018_ [1].
 
 This release bundles up our **ExpressionNet** (ExpNet) with **FacePoseNet** (FPN) from Chang _et al._ [2], and **3DMM face identity shape network** from Tran _et al._ [3], which are available separately from the [FacePoseNet project page](https://github.com/fengju514/Face-Pose-Net) and the [Face Identity Shape Net project page](https://github.com/anhttran/3dmm_cnn), respectively. 
 
@@ -79,7 +79,7 @@ This project is described in our paper [1]. If you use our expression model, ple
 ```
 
 ## References
-[1] F.-J. Chang, A. Tran, T. Hassner, I. Masi, R. Nevatia, G. Medioni, "[ExpNet: Landmark-Free, Deep, 3D Facial Expressions](https://arxiv.org/abs/1708.07517)", in the 13th IEEE Conference on Automatic Face and Gesture Recognition, 2018
+[1] F.-J. Chang, A. Tran, T. Hassner, I. Masi, R. Nevatia, G. Medioni, "[ExpNet: Landmark-Free, Deep, 3D Facial Expressions](https://arxiv.org/abs/1802.00542)", in the 13th IEEE Conference on Automatic Face and Gesture Recognition, 2018
 
 [2] F.-J. Chang, A. Tran, T. Hassner, I. Masi, R. Nevatia, G. Medioni, "[FacePoseNet: Making a Case for Landmark-Free Face Alignment](https://arxiv.org/abs/1708.07517)", in the 7th IEEE International Workshop on Analysis and Modeling of Faces and Gestures, ICCV Workshops, 2017
 

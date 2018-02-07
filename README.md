@@ -1,4 +1,5 @@
 # Expression-Net
+![Teaser](https://github.com/fengju514/Expression-Net/blob/master/ExpNet_teaser_v2.jpg)
 
 This page contains a deep convolutional neural network (DCNN) model and python code for robust estimation of the 29 degrees-of-freedom, 3DMM face expression coefficients, directly from an unconstrained face image and without the use of face landmark detectors. The method is described in the paper: 
 
@@ -9,8 +10,6 @@ This release bundles up our **ExpressionNet** (ExpNet) with **FacePoseNet** (FPN
 The code provided here bundles all three components for holistic 3D face modeling and produces a 3D model (.ply mesh file).
 
 **Important** This is an ongoing project. Please check here for updates, corrections and extensions. In particular, mid level facial details can be added to this shape using our [extreme 3D reconstruction project](https://github.com/anhttran/extreme_3d_faces). At the moment facial details estimation is not supported by the code offered here, but we plan to add this in the future. 
-
-![Teaser](https://github.com/fengju514/Expression-Net/blob/master/ExpNet_teaser_v2.jpg)
 
 ## Features
 * Estimating **29D 3DMM face expression coefficients**

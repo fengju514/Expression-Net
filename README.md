@@ -9,6 +9,8 @@ This release bundles up our **ExpressionNet** (ExpNet) with **FacePoseNet** (FPN
 
 The code provided here bundles all three components for holistic 3D face modeling and produces a 3D model (.ply mesh file).
 
+**New** Want to add facial details? Remove occlusions? Please ssee our newest CVPR'18 contribution on [extreme 3D face modeling](https://github.com/anhttran/extreme_3d_faces).
+
 **Important** This is an ongoing project. Please check here for updates, corrections and extensions. In particular, mid level facial details can be added to this shape using our [extreme 3D reconstruction project](https://github.com/anhttran/extreme_3d_faces). At the moment facial details estimation is not supported by the code offered here, but we plan to add this in the future. 
 
 ## Features

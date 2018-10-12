@@ -27,7 +27,7 @@ tf.app.flags.DEFINE_integer('image_size', 227, 'Image side length.')
 tf.app.flags.DEFINE_integer('num_gpus', 1, 'Number of gpus used for training. (0 or 1)')
 tf.app.flags.DEFINE_integer('batch_size', 1, 'Batch Size')
 
-
+inputlist = sys.argv[1] # You can try './input.csv' or input your own file
 
 
 # Global parameters
@@ -70,7 +70,7 @@ def extract_PSE_feats():
 
 
 	# Prepare data
-        data_dict = myparse.parse_input('./input.csv') # please see input.csv for the input format
+        data_dict = myparse.parse_input(inputlist) # please see input.csv for the input format
         print len(data_dict)
         ## Pre-processing the images                                                                                                                                                                              
         print '> preproc'
